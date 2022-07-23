@@ -1,8 +1,11 @@
 import React from 'react';
 import "../Styles/Home.css"
 import {  Link } from "react-router-dom";
+import {ReactComponent as Mobile} from './../Assests/Icons/Mobile';
+import Mobile2 from '../Assests/mobile-phone-svgrepo-com.svg'
 function Home() {
   return (
+    
     <div className='Home__baseContainer'>
       <header className='Home__Header'>
         <div className="Home__navigation">
@@ -59,6 +62,124 @@ function Home() {
         </div>
         
       </header>
+      <h3 className='Home__itemCategoryTitle'>Browse items by category</h3>
+      <section className='Home__itemCategoryContainer'>
+        
+        <div className='Home__itemCategoryItems'>
+          
+          <div className='Home__itemCategoryItem'>
+            <div className='Home__itemCategoryItem_Icon_Container'>
+              <img src={Mobile2} alt='' style={{width:'40px', height:'40px'}}/>
+            </div>
+            <div className='Home__itemCategorydetailContainer'>
+              <span>Electronics</span>
+              <span>103024 ads</span>
+              
+            </div>
+
+          </div>
+          <div className='Home__itemCategoryItem'>
+            <div className='Home__itemCategoryItem_Icon_Container'>
+              <img src={Mobile2} alt='' style={{width:'40px', height:'40px'}}/>
+            </div>
+            <div className='Home__itemCategorydetailContainer'>
+              <span>Electronics</span>
+              <span>103024 ads</span>
+              
+            </div>
+
+          </div>
+          <div className='Home__itemCategoryItem'>
+            <div className='Home__itemCategoryItem_Icon_Container'>
+              <img src={Mobile2} alt='' style={{width:'40px', height:'40px'}}/>
+            </div>
+            <div className='Home__itemCategorydetailContainer'>
+              <span>Electronics</span>
+              <span>103024 ads</span>
+              
+            </div>
+
+          </div>
+          <div className='Home__itemCategoryItem'>
+            <div className='Home__itemCategoryItem_Icon_Container'>
+              <img src={Mobile2} alt='' style={{width:'40px', height:'40px'}}/>
+            </div>
+            <div className='Home__itemCategorydetailContainer'>
+              <span>Electronics</span>
+              <span>103024 ads</span>
+              
+            </div>
+
+          </div>
+          <div className='Home__itemCategoryItem'>
+            <div className='Home__itemCategoryItem_Icon_Container'>
+              <img src={Mobile2} alt='' style={{width:'40px', height:'40px'}}/>
+            </div>
+            <div className='Home__itemCategorydetailContainer'>
+              <span>Electronics</span>
+              <span>103024 ads</span>
+              
+            </div>
+
+          </div>
+          <div className='Home__itemCategoryItem'>
+            <div className='Home__itemCategoryItem_Icon_Container'>
+              <img src={Mobile2} alt='' style={{width:'40px', height:'40px'}}/>
+            </div>
+            <div className='Home__itemCategorydetailContainer'>
+              <span>Electronics</span>
+              <span>103024 ads</span>
+              
+            </div>
+
+          </div>
+          <div className='Home__itemCategoryItem'>
+            <div className='Home__itemCategoryItem_Icon_Container'>
+              <img src={Mobile2} alt='' style={{width:'40px', height:'40px'}}/>
+            </div>
+            <div className='Home__itemCategorydetailContainer'>
+              <span>Electronics</span>
+              <span>103024 ads</span>
+              
+            </div>
+
+          </div>
+          <div className='Home__itemCategoryItem'>
+            <div className='Home__itemCategoryItem_Icon_Container'>
+              <img src={Mobile2} alt='' style={{width:'40px', height:'40px'}}/>
+            </div>
+            <div className='Home__itemCategorydetailContainer'>
+              <span>Electronics</span>
+              <span>103024 ads</span>
+              
+            </div>
+
+          </div><div className='Home__itemCategoryItem'>
+            <div className='Home__itemCategoryItem_Icon_Container'>
+              <img src={Mobile2} alt='' style={{width:'40px', height:'40px'}}/>
+            </div>
+            <div className='Home__itemCategorydetailContainer'>
+              <span>Electronics</span>
+              <span>103024 ads</span>
+              
+            </div>
+
+          </div><div className='Home__itemCategoryItem'>
+            <div className='Home__itemCategoryItem_Icon_Container'>
+              <img src={Mobile2} alt='' style={{width:'40px', height:'40px'}}/>
+            </div>
+            <div className='Home__itemCategorydetailContainer'>
+              <span>Electronics</span>
+              <span>103024 ads</span>
+              
+            </div>
+
+          </div>
+
+        </div>
+        
+
+      </section>
     </div>
   )
 }
