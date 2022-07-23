@@ -1,0 +1,140 @@
+.Home__baseContainer{
+    width: 100%;
+    height: 100%;
+    
+}
+.Home__Header{
+    width: 100%;
+    min-height:300px;
+    background-color: #149777;
+    padding: 5px;
+    
+    
+}
+.Home__navigation{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+}
+.Home__navItem{
+   
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.Home__nav__all-ads-btn{
+    
+    text-decoration: none !important;
+    color: white;
+    font-weight: 700;
+    font-size:18px;
+
+   
+}
+.Home__navlanguageToggleBtn{
+    color: white;
+    padding: 10px;
+    border:1px solid #007168;
+    
+}
+.Home__navlanguageToggleBtn.left{
+    border-radius:5px 0px 0px 5px ;
+}
+.Home__navlanguageToggleBtn.right{
+    border-radius:0px 5px 5px 0px ;
+}
+.ikmanLkIcon{
+    width: 150px;
+    height: 40px;
+    margin: 15px;
+}
+.Home__navIte_chat, .Home__navIte_login{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Home__navIte_chat span, .Home__navIte_login span{
+    padding: 7px;
+}
+
+.Home__nav__postYourAddBtn{
+    background-color: #FFC800;
+    color: #673500;
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 5px;
+}
+.home__header__locationContainer{
+    margin-top:50px ;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.home__header__location{
+    border-radius: 20px;
+    padding:8px 13px 8px 12px;
+    background-color:#10846F ;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.home__header__location svg{
+    padding: 0px 3px 0px 3px;
+}
+.home__header__location:hover{
+    cursor: pointer;
+}
+.home__header__SearchContainer{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.home__header__Search{
+    display: flex;
+    flex-grow: 1;
+    max-width: 980px;
+    height: 75px;
+    border-radius: 70px;
+    background-color: white;
+    align-items: center;
+    padding: 0 3px 0 40px;
+}
+.home__header__Search input{
+    display: flex;
+    flex-grow: 1;
+    height: 55px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.home__header__Search span{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC800;
+    color: #673500;
+    border: none;
+
+    
+    
+}
+.bi-search{
+    font-size: 2rem;
+}
