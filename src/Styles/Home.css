@@ -139,7 +139,9 @@
     font-size: 2rem;
 }
 .Home__itemCategoryTitle{
+    margin-top:40px ;
     margin-left: 15%;
+    color: #545655;
 }
 
 .Home__itemCategoryContainer{
@@ -158,13 +160,14 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    
     /* border:1px solid black; */
 }
 
 .Home__itemCategoryItem{
     display: flex;
     flex-direction: row;
-   
+    margin-top: 30px;
     
     align-items: center;
     min-width: 300px;
