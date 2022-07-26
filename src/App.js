@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import Home from "./Comonents/Home";
+import Ads from "./Comonents/Ads";
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="expenses" element={<div>expenses</div>} />
+        <Route path="Ads" element={<Ads/>} />
         <Route path="invoices" element={<div>invoices</div>} />
       </Routes>
     </BrowserRouter>
