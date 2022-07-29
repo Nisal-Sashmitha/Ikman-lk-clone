@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Styles/Ads.css';
 import Navigation from './Navigation';
+import Posts from './Posts';
 
 
 
@@ -8,14 +9,23 @@ import Navigation from './Navigation';
 
 function Ads() {
 
-    const [dropdonwValue,setDropdonwValue] = useState('current value');
+    const [dropdonwValue,setDropdonwValue] = useState('Date: Newest on top');
+    const [typeOfPosterdropdonwDownVal,setTypeOfPosterdropdonwDownVal] = useState('Date: Newest on top');
     const [dropdonwDown, setDropdonwDown] = useState(false);
+    const [typeOfPosterdropdonwDown, setTypeOfPosterdropdonwDown] = useState(false);
 
     const dropdownClicked = () =>{
         if(dropdonwDown){
             setDropdonwDown(false)
         }else{
             setDropdonwDown(true)
+        }
+    }
+    const typeOfPosterDropdownClicked = () =>{
+        if(typeOfPosterdropdonwDown){
+            setTypeOfPosterdropdonwDown(false)
+        }else{
+            setTypeOfPosterdropdonwDown(true)
         }
     }
 
@@ -58,10 +68,10 @@ function Ads() {
                         <div className='dropdownText'>
                             <span  className='dropdonwn_selected_item'>{dropdonwValue}</span>
                             <div className={`dropdonw_items_list ${dropdonwDown ? "" : "hide"}`}>
-                                <span  className='dropdonw_item'>option 1</span>
-                                <span  className='dropdonw_item'>option 2</span>
-                                <span  className='dropdonw_item'>option 3</span>
-                                <span  className='dropdonw_item'>option 4</span>
+                                <span  className='dropdonw_item' onClick={()=>setDropdonwValue('Date: Newest on top')}>Date: Newest on top</span>
+                                <span  className='dropdonw_item' onClick={()=>setDropdonwValue('Date: Oldest on top')}>Date: Oldest on top</span>
+                                <span  className='dropdonw_item' onClick={()=>setDropdonwValue('Price: High to low')}>Price: High to low</span>
+                                <span  className='dropdonw_item' onClick={()=>setDropdonwValue('price: Low to high')}>price: Low to high</span>
 
                             </div>
                             
@@ -73,10 +83,43 @@ function Ads() {
                                                                          (<img src={require('../Assests/Icons/Chevron down.svg').default}/>)}
                         </div>
                     </div>
-                    nisal sah
+                    <span className='ads_Container_adsOptionList_titles'>Type of poster</span>
+                    <div className='ads_Container_adsOptionList_checkbox'>
+                        <input type='checkbox'/> <span>BOOSTER DELIVERY</span>
+                    </div>
+                    <div className='ads_Container_adsOptionList_checkbox'>
+                        <input type='checkbox'/> <span>URGENT</span>
+                    </div>
+                    <div className='ads_Container_adsOptionList_checkbox'>
+                        <input type='checkbox'/> <span>FEATURED</span>
+                    </div>
+                    <span className='ads_Container_adsOptionList_titles'>Filter ads by</span>
+                    <div className='dropudown' onClick={typeOfPosterDropdownClicked}>
+                        
+                        <div className='dropdownText'>
+                            <span  className='dropdonwn_selected_item'>{typeOfPosterdropdonwDownVal}</span>
+                            <div className={`dropdonw_items_list ${typeOfPosterdropdonwDown ? "" : "hide"}`}>
+                                <span  className='dropdonw_item' onClick={()=>setTypeOfPosterdropdonwDownVal('Date: Newest on top')}>Date: Newest on top</span>
+                                <span  className='dropdonw_item' onClick={()=>setTypeOfPosterdropdonwDownVal('Date: Oldest on top')}>Date: Oldest on top</span>
+                                <span  className='dropdonw_item' onClick={()=>setTypeOfPosterdropdonwDownVal('Price: High to low')}>Price: High to low</span>
+                                <span  className='dropdonw_item' onClick={()=>setTypeOfPosterdropdonwDownVal('price: Low to high')}>price: Low to high</span>
+
+                            </div>
+                            
+                        </div>
+                            
+                        
+                        
+                        <div className='dropdownIcon' onClick={typeOfPosterDropdownClicked}>{typeOfPosterdropdonwDown ? (<img src={require('../Assests/Icons/Chevron up.svg').default}/>) :
+                                                                         (<img src={require('../Assests/Icons/Chevron down.svg').default}/>)}
+                        </div>
+                    </div>
                 </div>
                 <div className='ads_Container_adsList'>
-
+                    <Posts/>
+                    <Posts/>
+                    <Posts/>
+                    <Posts/>
                 </div>
             </section>
         </div>

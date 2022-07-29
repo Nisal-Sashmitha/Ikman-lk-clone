@@ -145,6 +145,7 @@
     margin-right: 20px;
     overflow: visible;
     border: 1px solid #D4DED9;
+    margin-bottom: 20px;
 }
 
 .dropdownText{
@@ -156,6 +157,11 @@
 .dropdonw_item{
     padding: 5px;
     font-size: larger;
+    padding-left:8px ;
+}
+.dropdonw_item:hover{
+    background-color: rgb(174, 174, 240);
+    color: rgb(255, 255, 255);
 }
 .dropdonw_items_list{
     /* visibility: hidden; */
@@ -164,7 +170,9 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    padding-left:8px ;
+    
+    z-index: 2;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 .dropdonwn_selected_item{
     position: relative;
